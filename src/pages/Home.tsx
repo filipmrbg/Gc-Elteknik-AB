@@ -82,6 +82,7 @@ export default function Home() {
 
   const heroBgRef = useRef<HTMLDivElement>(null);
   const [isCallModalOpen, setIsCallModalOpen] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
 
   useEffect(() => {
     let ticking = false;
@@ -124,6 +125,7 @@ export default function Home() {
             inset: 0,
             zIndex: 0,
             overflow: 'hidden',
+            backgroundColor: '#0a1128',
           }}
         >
           {images.hero.videoUrl ? (
@@ -133,12 +135,15 @@ export default function Home() {
               loop
               playsInline
               preload="auto"
-              poster={images.hero.background.url}
+              onLoadedData={() => setIsVideoReady(true)}
+              onPlaying={() => setIsVideoReady(true)}
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
                 objectPosition: 'center',
+                opacity: isVideoReady ? 1 : 0,
+                transition: 'opacity 0.4s ease',
               }}
             >
               <source src={images.hero.videoUrl} type="video/mp4" />

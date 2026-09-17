@@ -13,20 +13,20 @@ const container: React.CSSProperties = {
 
 const faqItems = [
   {
-    question: 'Hur snabbt kan vi få en offert på vägmarkering?',
-    answer: 'Vi återkopplar vanligtvis inom 24 timmar och tar fram en specificerad offert baserad på era underlag, ritningar eller en genomgång av ytan.',
+    question: 'Hur snabbt kan vi få en offert på elinstallation?',
+    answer: 'Vi återkopplar vanligtvis inom 24 timmar och lämnar en tydlig, specificerad offert baserad på era önskemål eller ritningar.',
   },
   {
-    question: 'Vilka geografiska områden är ni verksamma i?',
-    answer: 'TMT Vägmarkeringar AB utför uppdrag över hela Sverige åt både privata företag, kommuner, bostadsrättsföreningar och vägsamfälligheter.',
+    question: 'Vilka geografiska områden i Stockholm täcker ni?',
+    answer: 'Gc Elteknik AB utför arbeten i hela Storstockholm, inklusive innerstaden, Nacka, Täby, Sollentuna, Danderyd, Lidingö, Solna och omnejd.',
   },
   {
-    question: 'Klarar era markeringar nordiskt vinterklimat och plogning?',
-    answer: 'Ja, vi använder certifierad termoplast och slitstarka tvåkomponentsfärger utvecklade för att klara tuffa väderförhållanden, saltning och snöröjning.',
+    question: 'Hur fungerar ROT-avdrag och Grön Teknik?',
+    answer: 'Vi tillämpar ROT-avdrag (30 % på arbetskostnad) och Grön Teknik-avdrag (50 % på laddbox och installation) direkt på fakturan. Ni behöver inte göra någon egen ansökan.',
   },
   {
-    question: 'Kan ni utföra arbetet under nätter eller helger?',
-    answer: 'Absolut! För att minimera trafikstörningar och inte blockera parkeringsytor under dagtid arbetar vi flexibelt dygnet runt efter överenskommelse.',
+    question: 'Är era elinstallationer certifierade och försäkrade?',
+    answer: 'Ja, vi är ett auktoriserat elinstallationsföretag hos Elsäkerhetsverket och innehar fullständig ansvarsförsäkring och trygghetsgaranti.',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta TMT Vägmarkeringar | Hela Sverige',
-    'Kontakta TMT Vägmarkeringar AB för professionell vägmarkering, linjemålning, parkeringslinjer och industrimålning i hela Sverige. Ring 073-771 86 17.'
+    'Kontakta Gc Elteknik AB | Elektriker i Stockholm',
+    'Kontakta Gc Elteknik AB för professionella elinstallationer, belysning, elcentraler och laddboxar i Stockholm med omnejd. Ring 08-410 230 40.'
   );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -71,14 +71,18 @@ export default function Contact() {
       {/* ── SECTION A: HERO ───────────────────────────────────── */}
       <section style={{
         position: 'relative',
-        backgroundImage: 'url(/about.jpg)',
+        backgroundImage: 'url(/contact-hero.webp)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center 40%',
+        backgroundPosition: 'center 45%',
         paddingTop: '150px',
         paddingBottom: '70px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.76) 100%)' }} />
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(180deg, rgba(10, 17, 40, 0.80) 0%, rgba(10, 17, 40, 0.66) 50%, rgba(10, 17, 40, 0.86) 100%)',
+        }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <div>
             <ScrollReveal animation="blur-in">
@@ -94,7 +98,7 @@ export default function Contact() {
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.08rem', margin: 0, maxWidth: '620px', marginInline: 'auto', lineHeight: 1.6 }}>
-                Vi återkopplar vanligtvis inom 24 timmar. Kostnadsfri offert och professionell rådgivning ingår alltid.
+                Vi återkopplar vanligtvis inom 24 timmar. Kostnadsfri offert och professionell elteknisk rådgivning ingår alltid.
               </p>
             </ScrollReveal>
           </div>
@@ -123,7 +127,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Kontakta oss via telefon, e-post eller formuläret. Oavsett om det gäller parkeringsmarkering, väglinjer, truckgångar eller symboler hjälper vi er gärna.
+                Kontakta oss via telefon, e-post eller formuläret. Oavsett om det gäller byte av elcentral, belysning, installation av laddbox eller totalrenovering hjälper vi er gärna.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -147,12 +151,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0737718617"
+                        href="tel:0841023040"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        073-771 86 17
+                        08-410 230 40
                       </a>
                     </div>
                   </div>
@@ -177,7 +181,7 @@ export default function Contact() {
                       Verksamhetsområde
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Hela Sverige • Rikstäckande etablering
+                      Stockholm med omnejd • Nacka • Täby • Sollentuna • Hela Storstockholm
                     </p>
                   </div>
                 </div>
@@ -201,12 +205,12 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:info@tmtab.com"
+                      href="mailto:info@gcelteknik.se"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = '#0F172A')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      info@tmtab.com
+                      info@gcelteknik.se
                     </a>
                   </div>
                 </div>
@@ -230,7 +234,7 @@ export default function Contact() {
                       Företagsuppgifter
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      TMT Vägmarkeringar AB • Org.nr: 559221-0099 • Godkänd för F-skatt
+                      Gc Elteknik AB • Org.nr: 559479-2151 • Godkänd för F-skatt
                     </p>
                   </div>
                 </div>
@@ -277,7 +281,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)', marginBottom: '6px' }}>
-                        Företag / BRF / Kommun (valfritt)
+                        Företag / BRF (valfritt)
                       </label>
                       <input
                         type="text"
@@ -324,11 +328,11 @@ export default function Contact() {
 
                   <div>
                     <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)', marginBottom: '6px' }}>
-                      Plats / Ort för projektet
+                      Område / Ort i Stockholm
                     </label>
                     <input
                       type="text"
-                      placeholder="Ort eller kommun"
+                      placeholder="T.ex. Stockholm, Nacka, Täby..."
                       style={inputStyle}
                       onFocus={focusInput}
                       onBlur={blurInput}
@@ -341,7 +345,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       rows={4}
-                      placeholder="Berätta om typ av markering, yta (ca m² eller antal p-platser) samt önskad tidsplan..."
+                      placeholder="Berätta om ert elprojekt (t.ex. elinstallation, laddbox, belysning, centralbyte) samt önskad tidsplan..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
@@ -385,19 +389,30 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ── SECTION C: FAQ ─────────────────────────────────────── */}
-      <section style={{ background: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
-        <div style={container}>
+      {/* ── SECTION C: FAQ ────────────────────────────────────── */}
+      <section style={{
+        background: '#0a1128',
+        padding: 'clamp(70px, 9vw, 110px) 0',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'radial-gradient(ellipse at 85% 25%, rgba(255, 183, 3, 0.08) 0%, transparent 60%)',
+          pointerEvents: 'none',
+        }} />
+        <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <FAQAccordion
             items={faqItems}
-            title="Vanliga frågor om våra tjänster"
-            subtitle="Här har vi samlat svar på återkommande frågor kring offerter, etablering och vägmarkeringsarbeten."
-            dark={false}
+            title="Vanliga frågor inför kontakt"
+            subtitle="Svar på de vanligaste frågorna inför en elteknisk beställning eller offertförfrågan i Stockholm."
+            dark={true}
           />
         </div>
       </section>
 
-      {/* ── SECTION D: CTA ────────────────────────────────────────── */}
+      {/* ── SECTION D: CTA BANNER ─────────────────────────────── */}
       <CTABanner />
 
       <style>{`
@@ -406,6 +421,8 @@ export default function Contact() {
             grid-template-columns: 1fr !important;
             gap: 40px !important;
           }
+        }
+        @media (max-width: 600px) {
           .contact-form-row {
             grid-template-columns: 1fr !important;
             gap: 0 !important;

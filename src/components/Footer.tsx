@@ -1,11 +1,10 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import images from '../data/images';
 import services from '../data/services';
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/tmt.vagmarkeringar/' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/p/TMT-AB-100045809239067/?locale=sv_SE' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/gcelteknik' },
 ];
 
 export default function Footer() {
@@ -51,7 +50,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              TMT Vägmarkeringar AB är specialister på vägmarkering, linjemålning, parkeringsmarkering och industrimålning för företag, kommuner och bostadsrättsföreningar i hela Sverige.
+              Gc Elteknik AB utför certifierade elinstallationer, belysningsdesign, byte av elcentraler och installation av laddboxar för privatpersoner och företag i Stockholm med omnejd.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -124,23 +123,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:info@tmtab.com"
+                href="mailto:info@gcelteknik.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>info@tmtab.com</span>
+                <span>info@gcelteknik.se</span>
               </a>
 
               <a
-                href="tel:0737718617"
+                href="tel:0841023040"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>073-771 86 17</span>
+                <span>08-410 230 40</span>
               </a>
 
               <div
@@ -149,7 +148,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Hela Sverige</span>
+                <span>Stockholm med omnejd</span>
               </div>
             </div>
           </div>
@@ -171,8 +170,8 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - TMT Vägmarkeringar AB</span>
-            <span>Org.nr: 559221-0099</span>
+            <span>© 2026 Gc Elteknik AB</span>
+            <span>Org.nr: 559479-2151</span>
             <span>Godkänd för F-skatt</span>
           </div>
         </div>

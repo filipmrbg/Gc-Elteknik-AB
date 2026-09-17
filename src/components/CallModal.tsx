@@ -10,10 +10,10 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
 
   const contacts = [
     {
-      name: 'Dan Wååg',
+      name: 'Gabriel Gezer',
       role: 'Ägare & VD',
-      phone: '073-771 86 17',
-      tel: 'tel:0737718617',
+      phone: '08-410 230 40',
+      tel: 'tel:0841023040',
     },
   ];
 
@@ -104,7 +104,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
               fontFamily: 'var(--font-heading)',
             }}
           >
-            Ring TMT Vägmarkeringar
+            Ring Gc Elteknik AB
           </h2>
           <p style={{ fontSize: '0.9rem', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
             Kontakta oss direkt för rådgivning, frågor och kostnadsfri offert.

@@ -12,11 +12,11 @@ const defaultHeading = 'Begär en kostnadsfri offert';
 const defaultCheckItems = [
   'Kostnadsfri rådgivning och offert',
   'Snabb återkoppling inom 24 timmar',
-  'Rikstäckande service i hela Sverige',
+  'Auktoriserade elektriker i Stockholm',
 ];
 
 export default function CTABanner({ heading = defaultHeading, checkItems = defaultCheckItems }: Props) {
-  const bgImage = images.cta?.banner?.url || '/cta-banner-bg.jpg';
+  const bgImage = images.cta?.banner?.url || '/hero-main.webp';
 
   return (
     <section style={{ 
@@ -25,10 +25,10 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
       overflow: 'hidden',
       padding: 'clamp(70px, 9vw, 95px) 0',
     }}>
-      {/* Background Image: TMT Scania road marking truck */}
+      {/* Background Image */}
       <img
         src={bgImage}
-        alt="TMT Vägmarkeringar lastbil och utrustning"
+        alt="Gc Elteknik AB moderna elinstallationer"
         loading="lazy"
         decoding="async"
         style={{
@@ -43,12 +43,12 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
         }}
       />
 
-      {/* Dark Fading Overlay tailored to highlight truck on left and text on right */}
+      {/* Dark Fading Overlay tailored to highlight text on left and electrician hands on right */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(270deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.85) 45%, rgba(15, 23, 42, 0.35) 75%, rgba(15, 23, 42, 0.15) 100%)',
+          background: 'linear-gradient(90deg, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.82) 48%, rgba(15, 23, 42, 0.32) 78%, rgba(15, 23, 42, 0.12) 100%)',
           zIndex: 1,
         }}
         className="cta-overlay"
@@ -73,15 +73,12 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
       }}>
         <div className="cta-grid" style={{
           display: 'grid',
-          gridTemplateColumns: '42% 58%',
+          gridTemplateColumns: '56% 44%',
           gap: '40px',
           alignItems: 'center',
         }}>
-          {/* Left: Truck focus space allowing Scania truck to be clearly visible */}
-          <div className="cta-truck-focus-space" aria-hidden="true" />
-
-          {/* Right: Text Content */}
-          <ScrollReveal animation="fade-left" duration={0.8}>
+          {/* Left: Text Content */}
+          <ScrollReveal animation="fade-right" duration={0.8}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
               <span style={{
                 color: 'rgba(255, 255, 255, 0.85)',
@@ -139,6 +136,9 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
               </div>
             </div>
           </ScrollReveal>
+
+          {/* Right: Craftsmanship focus space allowing hands and dimmer to be clearly visible */}
+          <div className="cta-focus-space" aria-hidden="true" />
         </div>
       </div>
 
@@ -154,7 +154,7 @@ export default function CTABanner({ heading = defaultHeading, checkItems = defau
             grid-template-columns: 1fr !important;
             gap: 0 !important;
           }
-          .cta-truck-focus-space {
+          .cta-focus-space {
             display: none !important;
           }
           .cta-overlay {

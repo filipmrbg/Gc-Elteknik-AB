@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | TMT Vägmarkeringar',
-    'Utforska våra tjänster inom vägmarkering, linjemålning, parkeringsmarkering och industrimålning i hela Sverige.'
+    'Våra Tjänster | Gc Elteknik AB',
+    'Professionella elinstallationer, belysning, modernisering av elcentraler och laddboxar för privatpersoner och företag i Stockholm.'
   );
 
   const { hash } = useLocation();
@@ -64,7 +64,7 @@ export default function ServicesOverview() {
       {/* ── HERO HEADER ──────────── */}
       <section style={{
         position: 'relative',
-        backgroundImage: 'url("/services-hero.jpg")',
+        backgroundImage: 'url("/hero-main.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center 45%',
         paddingTop: '140px',
@@ -93,7 +93,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              TMT Vägmarkeringar AB erbjuder professionella lösningar inom vägmarkering, linjemålning och parkeringsmarkering i hela Sverige.
+              Gc Elteknik AB erbjuder auktoriserade lösningar inom elinstallationer, belysningsdesign, elcentraler och laddboxar för privatpersoner och företag i hela Storstockholm.
             </p>
           </ScrollReveal>
         </div>

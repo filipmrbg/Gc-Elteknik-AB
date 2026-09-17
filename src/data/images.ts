@@ -1,5 +1,5 @@
 /**
- * CENTRALIZED IMAGE CONFIGURATION - TMT VÄGMARKERINGAR AB
+ * CENTRALIZED IMAGE CONFIGURATION - GC ELTEKNIK AB
  *
  * All images used across the site are defined here.
  */
@@ -41,147 +41,147 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo.png',
-    alt: 'TMT Vägmarkeringar - Professionell vägmarkering och linjemålning i hela Sverige',
+    alt: 'Gc Elteknik AB - Certifierade elinstallationer och elektriker i Stockholm',
   },
   logoDark: {
     url: '/logo-dark.png',
-    alt: 'TMT Vägmarkeringar AB',
+    alt: 'Gc Elteknik AB',
   },
   ogImage: {
     url: '/og-image.png',
-    alt: 'TMT Vägmarkeringar Logotyp',
+    alt: 'Gc Elteknik AB Logotyp',
   },
 
   hero: {
     background: {
-      url: '/hero-main.webp',
-      alt: 'TMT Vägmarkeringar professionell vägmarkering och linjemålning',
+      url: '/hero-main.jpg',
+      alt: 'Gc Elteknik AB moderna elinstallationer och belysningsdesign i Stockholm',
     },
-    videoUrl: 'https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260916_120304_b6e22521-4e42-4364-9c14-ebed64144e92.mp4',
+    videoUrl: '/hero-video.mp4',
   },
 
   services: {
-    'vagmarkering': {
+    'elinstallationer': {
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Behöriga elinstallationer för privatpersoner och företag i Stockholm',
+    },
+    'belysning': {
       url: '/gallery/gallery-2.jpg',
-      alt: 'Vägmarkering och linjemålning i hela Sverige',
+      alt: 'Exklusiv belysningsdesign och LED-installationer för restaurang och butik',
     },
-    'parkeringsmarkering': {
-      url: '/gallery/gallery-1.jpg',
-      alt: 'Parkeringsmarkering och laddplatser',
+    'elcentraler': {
+      url: '/gallery/gallery-5.jpg',
+      alt: 'Modernisering och byte av elcentraler och automatsäkringar',
     },
-    'industrimalning': {
+    'laddboxar': {
       url: '/gallery/gallery-4.jpg',
-      alt: 'Industrimålning och truckgångar i lagerlokaler',
-    },
-    'symbolmalning': {
-      url: '/gallery/gallery-3.jpg',
-      alt: 'Symbolmålning, pilar och övergångsställen',
+      alt: 'Installation av laddboxar och elbilsladdare för villa och BRF',
     },
   },
 
   gallery: [
     {
       url: '/gallery/gallery-1.jpg',
-      alt: 'TMT Vägmarkeringar parkeringsmarkering och linjemålning',
+      alt: 'Gc Elteknik AB pendelarmaturer och restaurangbelysning Drottninghof',
     },
     {
       url: '/gallery/gallery-2.jpg',
-      alt: 'TMT Vägmarkeringar vägmarkering och övergångsställe',
+      alt: 'Gc Elteknik AB stämningsfull lounge- och arkitekturbelysning',
     },
     {
       url: '/gallery/gallery-3.jpg',
-      alt: 'TMT Vägmarkeringar laddplats och symbolmarkering',
+      alt: 'Gc Elteknik AB neonskylt och integrerade LED-profiler Drottninghof',
     },
     {
       url: '/gallery/gallery-4.jpg',
-      alt: 'TMT Vägmarkeringar industrimålning och truckgångar',
+      alt: 'Gc Elteknik AB laddboxinstallation villa med dold kabeldragning',
     },
     {
       url: '/gallery/gallery-5.jpg',
-      alt: 'TMT Vägmarkeringar linjemålning och trafiksäkerhet',
+      alt: 'Gc Elteknik AB modern elcentral med personskyddsbrytare och smart styrning',
     },
     {
       url: '/gallery/gallery-6.jpg',
-      alt: 'TMT Vägmarkeringar symboler och stopplinjer',
+      alt: 'Gc Elteknik AB infällda spotlights och skandinavisk köksbelysning',
     },
   ],
 
   cta: {
     banner: {
-      url: '/cta-banner-bg.jpg',
-      alt: 'TMT Vägmarkeringar lastbil och vägmarkeringsutrustning',
+      url: '/cta-banner-bg.webp',
+      alt: 'Gc Elteknik AB auktoriserade elinstallationer och offert',
     },
     midSection: {
       url: '/cta-mid-section.webp',
-      alt: 'TMT Vägmarkeringar linjemålning',
+      alt: 'Gc Elteknik AB auktoriserad installation av laddbox och el i Stockholm',
     },
   },
 
   about: {
     hero: {
-      url: '/about.jpg',
-      alt: 'TMT Vägmarkeringar AB verksamhet och expertis i hela Sverige',
+      url: '/about-hero.webp',
+      alt: 'Gc Elteknik AB auktoriserade elektriker och belysning i Stockholm',
     },
   },
 
   whyChooseUs: {
-    url: '/why-choose-us.webp',
-    alt: 'Professionell vägmarkering med högsta precision - TMT Vägmarkeringar AB',
+    url: '/gallery/gallery-5.jpg',
+    alt: 'Certifierad elteknik med högsta säkerhet - Gc Elteknik AB',
   },
 
   ideaToResult: {
-    url: '/idea-to-result.webp',
-    alt: 'Från planering till färdig vägmarkering i hela Sverige',
+    url: '/gallery/gallery-6.jpg',
+    alt: 'Från planering till färdig elinstallation i Stockholm',
   },
 
   portfolio: [
     {
       image: {
         url: '/gallery/gallery-1.jpg',
-        alt: 'Parkeringsmarkering och linjemålning för företag och BRF',
+        alt: 'Restaurangbelysning och pendelarmaturer på Drottninghof',
       },
-      title: 'Parkeringsmarkering & Linjer',
-      category: 'Parkeringsplatser',
+      title: 'Restaurangbelysning och interiör',
+      category: 'Belysningsdesign',
     },
     {
       image: {
         url: '/gallery/gallery-2.jpg',
-        alt: 'Vägmarkering och övergångsställe för kommun och samfällighet',
+        alt: 'Stämningsbelysning, sconces och integrerad LED i lounge',
       },
-      title: 'Vägmarkering & Övergångsställe',
-      category: 'Vägmarkering',
+      title: 'Stämningsfull restaurang och lounge',
+      category: 'Kommersiell El',
     },
     {
       image: {
         url: '/gallery/gallery-3.jpg',
-        alt: 'Laddplatsmarkering och elbilssymboler',
+        alt: 'Neonportal och dolda LED-profiler i entré',
       },
-      title: 'Laddplatser & Symboler',
-      category: 'Laddplatsmarkering',
+      title: 'Neonportal och LED-profiler',
+      category: 'Specialbelysning',
     },
     {
       image: {
         url: '/gallery/gallery-4.jpg',
-        alt: 'Industrimarkering av truckgångar och skyddszoner i lager',
+        alt: 'Installation av laddbox för elbil på villafasad',
       },
-      title: 'Industrilinjer & Truckgångar',
-      category: 'Industrimarkering',
+      title: 'Laddboxinstallation Villa',
+      category: 'Grön Teknik',
     },
     {
       image: {
         url: '/gallery/gallery-5.jpg',
-        alt: 'Linjemålning för ökad trafiksäkerhet',
+        alt: 'Installation och modernisering av smart elcentral',
       },
-      title: 'Linjemålning & Trafiksäkerhet',
-      category: 'Vägmarkering',
+      title: 'Modern normcentral och säkringsskåp',
+      category: 'Elcentraler',
     },
     {
       image: {
         url: '/gallery/gallery-6.jpg',
-        alt: 'Symboler, pilar och stopplinjer med termoplast',
+        alt: 'Infällda takspotlights och belysning i modernt kök',
       },
-      title: 'Symboler, Pilar & Stopplinjer',
-      category: 'Specialmarkering',
+      title: 'Infällda spotlights i kök',
+      category: 'Bostadsinstallation',
     },
   ],
 };

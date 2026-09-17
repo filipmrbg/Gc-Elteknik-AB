@@ -346,7 +346,7 @@ export default function Navbar() {
             }}
           >
             <a
-              href="tel:0737718617"
+              href="tel:0841023040"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -363,7 +363,7 @@ export default function Navbar() {
               onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >
               <Phone size={14} color="#ffffff" />
-              <span>073-771 86 17</span>
+              <span>08-410 230 40</span>
             </a>
           </div>
 
@@ -564,8 +564,8 @@ export default function Navbar() {
             Ring oss direkt:
           </span>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
-            <a href="tel:0737718617" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-              <Phone size={14} color="#ffffff" /> 073-771 86 17
+            <a href="tel:0841023040" style={{ color: 'var(--color-white)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <Phone size={14} color="#ffffff" /> 08-410 230 40
             </a>
           </div>
         </div>

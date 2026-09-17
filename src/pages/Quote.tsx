@@ -14,15 +14,15 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Kostar offerten något?',
-    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era ritningar, ytor och förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
+    answer: 'Nej, offert och rådgivning är alltid helt kostnadsfritt. Vi går igenom era önskemål och förutsättningar och tar fram ett tydligt, specificerat prisförslag.',
   },
   {
-    question: 'Hur snabbt kan ni påbörja markeringsarbetet?',
-    answer: 'Det beror på projektets omfattning och plats. Vi har stor flexibilitet och snabb etablering, och kan ofta utföra mindre uppdrag med kort varsel.',
+    question: 'Hur snabbt kan ni påbörja elarbetet?',
+    answer: 'Vi återkopplar inom 24 timmar och kan ofta påbörja mindre elinstallationer med kort varsel. För större ombyggnader eller elcentralbyten planerar vi in arbetet i samråd med er.',
   },
   {
     question: 'Utför ni arbeten åt både privatpersoner, BRF och företag?',
-    answer: 'Ja! Vi hjälper företag, kommuner, bostadsrättsföreningar, fastighetsbolag och vägsamfälligheter över hela Sverige.',
+    answer: 'Ja, vi utför elinstallationer och belysningsarbeten för privatpersoner (med ROT-avdrag och Grön Teknik-avdrag), bostadsrättsföreningar samt företag och restauranger i hela Stockholm.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | TMT Vägmarkeringar',
-    'Beskriv ert projekt och begär en kostnadsfri offert för vägmarkering, linjemålning, parkeringsrutor eller industrimålning i hela Sverige.'
+    'Begär offert | Gc Elteknik AB',
+    'Beskriv ert projekt och begär en kostnadsfri offert för elinstallationer, belysning, elcentral eller laddbox i Stockholm.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -68,7 +68,7 @@ export default function Quote() {
       {/* ── SECTION A: HERO ───────────────────────────────────── */}
       <section style={{
         position: 'relative',
-        backgroundImage: 'url(/about.jpg)',
+        backgroundImage: 'url(/hero-main.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center 45%',
         paddingTop: '140px',
@@ -132,7 +132,7 @@ export default function Quote() {
                   fontSize: 'clamp(1.4rem, 2.2vw, 1.8rem)',
                   margin: '0 0 8px 0',
                 }}>
-                  Beskriv ert markeringsprojekt
+                  Beskriv ert elprojekt
                 </h2>
                 <p style={{ color: 'var(--color-gray-600)', fontSize: '0.92rem', margin: '0 0 28px 0', lineHeight: 1.6 }}>
                   Vi återkopplar vanligtvis samma eller nästkommande arbetsdag.
@@ -202,11 +202,11 @@ export default function Quote() {
                       onBlur={blurInput}
                     >
                       <option value="">Välj tjänst...</option>
-                      <option value="vagmarkering">Vägmarkering & Trafik</option>
-                      <option value="parkeringsmarkering">Parkeringsmarkering & Laddplatser</option>
-                      <option value="industrimalning">Industrimålning & Lagerlinjer</option>
-                      <option value="symbolmalning">Symbolmålning & Specialmarkering</option>
-                      <option value="annat">Annat markeringsarbete</option>
+                      <option value="elinstallationer">Elinstallation och service</option>
+                      <option value="belysning">Belysningsdesign</option>
+                      <option value="elcentraler">Elcentraler och säkringsskåp</option>
+                      <option value="laddboxar">Laddboxar</option>
+                      <option value="annat">Övriga elarbeten</option>
                     </select>
                   </div>
 
@@ -217,7 +217,7 @@ export default function Quote() {
                     <textarea
                       required
                       rows={5}
-                      placeholder="Berätta om ytan, antal p-platser, vägsträcka, plats/ort och önskad tidsram..."
+                      placeholder="Berätta om ert elprojekt, antal uttag/armaturer, fastighetstyp, adress/område i Stockholm och önskad tidsram..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       style={{ ...inputStyle, resize: 'vertical' }}
@@ -272,10 +272,10 @@ export default function Quote() {
                     fontSize: '1.4rem',
                     margin: '0 0 16px 0',
                   }}>
-                    Varför välja TMT Vägmarkeringar?
+                    Varför välja Gc Elteknik AB?
                   </h3>
                   <p style={{ color: 'var(--color-gray-600)', fontSize: '0.96rem', lineHeight: 1.7, margin: 0 }}>
-                    Vi kombinerar gedigen branscherfarenhet med moderna appliceringsmetoder, slitstarka material och högsta precision.
+                    Auktoriserad elektriker med fokus på elsäkerhet, modern belysningsdesign och personlig service i hela Stockholm.
                   </p>
                 </div>
 
@@ -283,18 +283,18 @@ export default function Quote() {
                   {[
                     {
                       icon: ShieldCheck,
-                      title: 'Certifierad kvalitet',
-                      desc: 'Full överensstämmelse med gällande krav och standarder för vägmarkering och trafiksäkerhet.',
+                      title: 'Auktoriserad elinstallatör',
+                      desc: 'Registrerade hos Elsäkerhetsverket med full behörighet för trygga och fackmannamässiga elinstallationer.',
                     },
                     {
                       icon: Clock,
-                      title: 'Snabba besked & tidsplan',
-                      desc: 'Specificerad offert inom 24 timmar och punktlig leverans enligt överenskommelse med minimal trafikstörning.',
+                      title: 'Snabba besked och punktlighet',
+                      desc: 'Specificerad offert inom 24 timmar, fasta priser och tydlig dialog från start till slutbesiktning.',
                     },
                     {
                       icon: Award,
-                      title: 'Över 30 års erfarenhet',
-                      desc: 'Omfattande kompetens inom allt från allmänna vägar till logistikanläggningar och bostadsrättsföreningar.',
+                      title: 'ROT och Grön Teknik',
+                      desc: 'Vi administrerar skattereduktionen direkt på fakturan för 30% på arbetskostnad eller 50% på laddbox.',
                     },
                   ].map(({ icon: Icon, title, desc }, i) => (
                     <div
@@ -346,7 +346,7 @@ export default function Quote() {
           <FAQAccordion
             items={faqItems}
             title="Vanliga frågor om offerten"
-            subtitle="Här hittar du svar på de vanligaste frågorna inför ert vägmarkeringsprojekt."
+            subtitle="Här hittar du svar på de vanligaste frågorna inför ert elprojekt i Stockholm."
           />
         </div>
       </section>

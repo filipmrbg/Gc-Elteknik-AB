@@ -1,11 +1,11 @@
 {
-  "name": "TMT Vägmarkeringar AB",
-  "short_name": "TMT",
-  "description": "Professionell vägmarkering, linjemålning och parkeringsmarkering i hela Sverige.",
+  "name": "Gc Elteknik AB",
+  "short_name": "Gc Elteknik",
+  "description": "Behörig elektriker i Stockholm - Elinstallationer, belysning, laddboxar och elcentraler.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#d97706",
+  "background_color": "#0a1128",
+  "theme_color": "#ffb703",
   "icons": [
     {
       "src": "/favicon.png",
@@ -14,3 +14,4 @@
     }
   ]
 }
+

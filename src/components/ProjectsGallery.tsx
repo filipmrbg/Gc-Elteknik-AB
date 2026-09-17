@@ -109,7 +109,7 @@ export default function ProjectsGallery() {
                 padding: '4px 14px',
                 borderRadius: '999px',
               }}>
-                Referenser
+                Referensprojekt
               </span>
               <h2
                 style={{
@@ -121,7 +121,7 @@ export default function ProjectsGallery() {
                   textTransform: 'uppercase',
                 }}
               >
-                Projekt i hela Sverige
+                Projekt i Stockholm med omnejd
               </h2>
             </ScrollReveal>
           </div>
@@ -136,7 +136,7 @@ export default function ProjectsGallery() {
                   margin: 0,
                 }}
               >
-                Här kan du se exempel på våra utförda vägmarkerings- och linjemålningsprojekt över hela Sverige. Hovra över bandet för att pausa eller klicka på en bild för att förstora.
+                Här kan du se exempel på våra utförda elinstallationer, belysningsprojekt och laddboxar i Stockholm. Hovra över bandet för att pausa eller klicka på en bild för att förstora.
               </p>
             </ScrollReveal>
           </div>
@@ -197,7 +197,7 @@ export default function ProjectsGallery() {
               Begär offert för ditt projekt
             </Button>
             <span style={{ fontSize: '0.85rem', color: 'var(--color-gray-600)' }}>
-              Kostnadsfri offert & rådgivning inom 24 timmar
+              Kostnadsfri offert och rådgivning inom 24 timmar
             </span>
           </div>
         </ScrollReveal>
